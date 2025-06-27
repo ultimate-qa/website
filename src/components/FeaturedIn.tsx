@@ -159,7 +159,7 @@ const FeaturedIn: React.FC = () => {
         <div className="mt-12 p-8 bg-gradient-primary rounded-xl text-white">
           <div className="text-center">
             <blockquote className="text-xl font-medium text-white mb-3 font-body">
-              "This is top quality work"
+              &ldquo;This is top quality work&rdquo;
             </blockquote>
             <cite className="text-sm text-white/80 font-body">
               — Djamel, Technical Lead, Healthcare Organization

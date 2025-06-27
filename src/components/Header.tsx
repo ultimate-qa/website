@@ -1,6 +1,7 @@
 'use client';
 
 import { MenuIcon, XIcon } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 
 interface HeaderProps {
@@ -26,11 +27,11 @@ const Header: React.FC<HeaderProps> = ({ onCTAClick }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <div className="text-2xl font-bold text-primary-600">
                 UltimateQA
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

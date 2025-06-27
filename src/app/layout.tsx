@@ -136,6 +136,7 @@ export default function RootLayout({
         
         {/* HubSpot tracking will be initialized by the HubSpot component */}
         <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             height="1"
             width="1"

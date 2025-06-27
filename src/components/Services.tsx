@@ -189,7 +189,7 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
               Ready to Transform Your Business?
             </h3>
             <p className="text-gray-600 mb-6">
-              Let's discuss your project and create a custom solution that drives real results.
+              Let&apos;s discuss your project and create a custom solution that drives real results.
             </p>
             <button
               onClick={() => handleServiceClick('General Consultation')}

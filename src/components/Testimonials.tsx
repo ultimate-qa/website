@@ -35,7 +35,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
       </div>
       
       <blockquote className="text-lg text-gray-700 leading-relaxed mb-6">
-        "{quote}"
+        &ldquo;{quote}&rdquo;
       </blockquote>
       
       <div className="border-t border-gray-200 pt-6">
@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      quote: "I'm highly impressed. It's given me the confidence to create more tests and automation around MuleSoft. We've made significant advancements with APIs and Microsoft, which is beyond my expectations.",
+      quote: "I&apos;m highly impressed. It&apos;s given me the confidence to create more tests and automation around MuleSoft. We&apos;ve made significant advancements with APIs and Microsoft, which is beyond my expectations.",
       author: "Jerome",
       role: "Technical Lead",
       company: "Healthcare Organization",
@@ -75,7 +75,7 @@ const Testimonials: React.FC = () => {
     },
     {
       id: 2,
-      quote: "I've heard great things about your work, and we're extremely happy to have you with us. That's what I wanted to share. It's a fantastic comment on the work you're doing. Keep up the passion.",
+      quote: "I&apos;ve heard great things about your work, and we&apos;re extremely happy to have you with us. That&apos;s what I wanted to share. It&apos;s a fantastic comment on the work you&apos;re doing. Keep up the passion.",
       author: "Djamel",
       role: "Technical Lead",
       company: "Healthcare Organization",
@@ -85,7 +85,7 @@ const Testimonials: React.FC = () => {
     },
     {
       id: 3,
-      quote: "The dashboard and the DevOps integration I saw recently are fantastic. There's a lot of potential for improvement. I'm currently a bottleneck as I need to build more tests, but we're definitely on the right track.",
+      quote: "The dashboard and the DevOps integration I saw recently are fantastic. There&apos;s a lot of potential for improvement. I&apos;m currently a bottleneck as I need to build more tests, but we&apos;re definitely on the right track.",
       author: "Jerome",
       role: "Technical Lead",
       company: "Healthcare Organization",
@@ -152,7 +152,7 @@ const Testimonials: React.FC = () => {
             Our Clients Are Thrilled!
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See their amazing feedback and the real results we've delivered for businesses across industries.
+            See their amazing feedback and the real results we&apos;ve delivered for businesses across industries.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ const Testimonials: React.FC = () => {
 
               {/* Quote */}
               <blockquote className="text-xl md:text-2xl text-gray-900 font-medium leading-relaxed mb-8 text-center">
-                "{current.quote}"
+                &ldquo;{current.quote}&rdquo;
               </blockquote>
 
               {/* Author Info */}

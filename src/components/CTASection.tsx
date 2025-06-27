@@ -41,7 +41,7 @@ const CTASection: React.FC<CTASectionProps> = ({ onCTAClick }) => {
           </h2>
           
           <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed mb-8 max-w-3xl mx-auto">
-            Entrust your business to us, and we'll do our best to exceed your expectations!
+            Entrust your business to us, and we&apos;ll do our best to exceed your expectations!
             Transform your testing approach with world-class automation solutions.
           </p>
         </div>
@@ -90,7 +90,7 @@ const CTASection: React.FC<CTASectionProps> = ({ onCTAClick }) => {
         {/* Contact Information */}
         <div className="mt-12 pt-8 border-t border-white/20">
           <p className="text-blue-200 text-sm mb-4">
-            Ready to discuss your project? We're here to help.
+            Ready to discuss your project? We&apos;re here to help.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <a 

@@ -1,7 +1,7 @@
 'use client';
 
 import { ChevronRightIcon, CodeIcon, RocketIcon, ZapIcon } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import HubSpotForm from './HubSpotForm';
 
 const Hero: React.FC = () => {
@@ -12,11 +12,11 @@ const Hero: React.FC = () => {
     setMounted(true);
   }, []);
 
-  const stats = [
+  const stats = useMemo(() => [
     { value: 200, suffix: '+', label: 'Businesses Helped', color: 'ultimateqa-blue' },
     { value: 150000, suffix: '+', label: 'Engineers Trained', color: 'ultimateqa-purple' },
     { value: 8, suffix: 'M', label: 'Daily Downtime Cost Prevention', color: 'ultimateqa-blue' },
-  ];
+  ], []);
 
   const [animatedStats, setAnimatedStats] = useState(stats.map(stat => ({ ...stat, current: 0 })));
 
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
     });
 
     return () => timeouts.forEach(clearTimeout);
-  }, [mounted]);
+  }, [mounted, stats]);
 
   return (
     <>
