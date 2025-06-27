@@ -5,7 +5,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
-  testMatch: '**/performance.spec.ts',
+  testMatch: ['**/performance.spec.ts', '**/api.spec.ts', '**/links.spec.ts', '**/mobile.spec.ts'],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -30,7 +30,7 @@ export default defineConfig({
     video: 'off',
   },
 
-  /* Configure projects for performance testing */
+  /* Configure projects for Chrome and Safari only */
   projects: [
     {
       name: 'chromium',
@@ -46,6 +46,16 @@ export default defineConfig({
             '--disable-backgrounding-occluded-windows',
             '--disable-renderer-backgrounding'
           ]
+        }
+      },
+    },
+    {
+      name: 'webkit',
+      use: { 
+        ...devices['Desktop Safari'],
+        // Performance testing settings for Safari
+        launchOptions: {
+          args: []
         }
       },
     },
